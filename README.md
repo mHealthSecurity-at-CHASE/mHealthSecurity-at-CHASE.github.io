@@ -1,4 +1,4 @@
- # IEEE/ACM CHASE 2026 – mHealth Security Workshop
+ # IEEE/ACM CHASE 2026 - mHealth Security Workshop
 
 ## Call for Papers (CFP)
 
@@ -9,7 +9,7 @@
 **Co-located with:** IEEE/ACM Conference on Connected Health: Applications, Systems and Engineering Technologies (CHASE 2026)
 
 
-**Dates:** August 4–6, 2026
+**Dates:** August 4-6, 2026
 
 
 **Location:** Pittsburgh, Pennsylvania, USA
@@ -32,7 +32,7 @@
 ## Workshop Overview
 
 
-Mobile health (mHealth) technologies—smartphone apps, wearables, implantables, home monitoring devices, and connected clinical systems—are transforming how healthcare is delivered, monitored, and managed. Yet, these same technologies introduce critical attack surfaces and privacy risks across the data lifecycle, from on-device sensing and communication to cloud analytics and electronic health record (EHR) integration. Securing mHealth systems is therefore essential to maintaining patient trust, safety, and regulatory compliance while enabling innovation in connected health.
+Mobile health (mHealth) technologies-smartphone apps, wearables, implantables, home monitoring devices, and connected clinical systems-are transforming how healthcare is delivered, monitored, and managed. Yet, these same technologies introduce critical attack surfaces and privacy risks across the data lifecycle, from on-device sensing and communication to cloud analytics and electronic health record (EHR) integration. Securing mHealth systems is therefore essential to maintaining patient trust, safety, and regulatory compliance while enabling innovation in connected health.
 
 
 The mHealth Security Workshop at IEEE/ACM CHASE 2026 provides a focused forum for researchers, practitioners, clinicians, and policymakers to discuss emerging threats, novel defenses, real-world deployments, and open challenges in securing mobile and connected health ecosystems. The workshop seeks contributions that span theory, system design, implementation, user studies, and policy, with an emphasis on deployable solutions and interdisciplinary collaboration.
@@ -94,7 +94,7 @@ Up to 6 pages (including references), describing original research, system desig
 
 ### Demo and Poster Abstracts
 
-2–3 pages, describing tools, prototypes, datasets, or interactive systems relevant to mHealth security that can be showcased during the workshop.
+2-3 pages, describing tools, prototypes, datasets, or interactive systems relevant to mHealth security that can be showcased during the workshop.
 
 
 ---
@@ -130,13 +130,13 @@ Accepted papers will be included in the official CHASE 2026 workshop proceedings
 (Exact dates to be aligned with the CHASE 2026 schedule; adjust as needed.)
 
 
-- **Paper submission deadline:** TBA (typically March–April 2026)
+- **Paper submission deadline:** TBA (typically March-April 2026)
 
 - **Notification of acceptance:** TBA (typically May 2026)
 
 - **Camera-ready deadline:** TBA (typically late May or June 2026)
 
-- **Workshop date:** One day during August 4–6, 2026 (Pittsburgh, PA, USA)
+- **Workshop date:** One day during August 4-6, 2026 (Pittsburgh, PA, USA)
 
 
 ---
