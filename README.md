@@ -22,8 +22,9 @@
 
 
 - **Workshop General Chair (CHASE 2026):** Prof. Honggang Wang, Yeshiva University, USA
-
 - **Workshop TPC Chair:** Prof. Yucheng Xie, Yeshiva University, USA
+- **Workshop Demo/Poster Chair:** Henry Ngo, Yeshiva University, USA
+- **Workshop Web Chair:** Ashikur Nobel, Yeshiva University, USA
 
 
 ---
@@ -127,16 +128,10 @@ Accepted papers will be included in the official CHASE 2026 workshop proceedings
 ## Important Dates
 
 
-(Exact dates to be aligned with the CHASE 2026 schedule; adjust as needed.)
-
-
-- **Paper submission deadline:** TBA (typically March-April 2026)
-
-- **Notification of acceptance:** TBA (typically May 2026)
-
-- **Camera-ready deadline:** TBA (typically late May or June 2026)
-
-- **Workshop date:** One day during August 4-6, 2026 (Pittsburgh, PA, USA)
+- **Paper submission deadline:** March 16, 2026
+- **Notification of acceptance:** April 7, 2026
+- **Camera-ready deadline:** April 20, 2026
+- **Workshop date:** August 6, 2026 (tentative)
 
 
 ---
@@ -192,3 +187,23 @@ Email: Yucheng.xie@yu.edu
 
 
 For general information about IEEE/ACM CHASE 2026 (registration, venue, accommodation), please refer to the official conference website at https://conferences.computer.org/chase2026/
+
+---
+
+## Workshop Flyer
+
+You can view or download the workshop flyer here: [Workshop Flyer (PDF)](flyer.pdf)
+
+---
+
+**Acknowledgment:** The workshop is partly supported by NSF grant #2428595 (PI Wang).
+
+---
+
+## Sponsors
+
+- ACM
+- IEEE
+- IEEE Computer Society
+- NSF
+- Elsevier
