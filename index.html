@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,9 +14,23 @@
             --bg-subtle: #f8fafc;
             --border: #e2e8f0;
         }
+
         .text-primary {
             color: var(--primary) !important;
         }
+
+        .btn-navy {
+            background-color: var(--primary);
+            border-color: var(--primary);
+            color: white;
+        }
+
+        .btn-navy:hover {
+            background-color: var(--accent);
+            border-color: var(--accent);
+            color: white;
+        }
+
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             font-size: 16px;
@@ -23,40 +38,51 @@
             line-height: 1.5;
             background-color: #fff;
         }
+
         .main-header {
             background: var(--primary);
             color: white;
             position: sticky;
             top: 0;
             z-index: 1000;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
             border-bottom: 3px solid var(--accent);
         }
+
         .header-top {
             padding: 15px 0;
-            border-bottom: 1px solid rgba(255,255,255,0.1);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         }
+
         .nav-link {
-            color: rgba(255,255,255,0.8) !important;
+            color: rgba(255, 255, 255, 0.8) !important;
             font-weight: 500;
             font-size: 0.9rem;
             text-transform: uppercase;
             letter-spacing: 0.5px;
             padding: 12px 15px !important;
         }
-        .nav-link:hover { color: white !important; }
 
-        section { padding: 40px 0; border-bottom: 1px solid var(--border); }
-        h2 { 
-            font-size: 1.25rem; 
-            font-weight: 800; 
-            text-transform: uppercase; 
-            letter-spacing: 1px; 
+        .nav-link:hover {
+            color: white !important;
+        }
+
+        section {
+            padding: 40px 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        h2 {
+            font-size: 1.25rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
             color: var(--primary);
             margin-bottom: 25px;
             display: flex;
             align-items: center;
         }
+
         h2::after {
             content: "";
             flex-grow: 1;
@@ -72,22 +98,26 @@
             padding: 20px;
             height: 100%;
         }
+
         .contact-details {
             padding: 5px 0 5px 20px;
             border-left: 4px solid var(--accent);
         }
+
         .topic-list {
             column-count: 2;
             column-gap: 40px;
             list-style: none;
             padding: 0;
         }
+
         .topic-list li {
             padding-bottom: 8px;
             position: relative;
             padding-left: 20px;
             font-size: 0.95rem;
         }
+
         .topic-list li::before {
             content: "•";
             position: absolute;
@@ -95,20 +125,67 @@
             color: var(--accent);
             font-weight: bold;
         }
-        
-        .important-dates-table { width: 100%; }
-        .important-dates-table td { padding: 8px 0; border-bottom: 1px dashed var(--border); }
-        .date-label { color: #64748b; }
-        .date-value { font-weight: 600; text-align: right; color: var(--primary); }
 
-        .footer { background: #0f172a; color: #94a3b8; padding: 30px 0; font-size: 0.9rem; }
-        
-        .logo-box { max-height: 40px; margin-right: 15px; }
-        .hero-logo-sm { max-height: 60px; }
+        /* Sponsors */
+        .sponsors {
+            margin-top: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 14px;
+        }
 
-        @media (max-width: 768px) { .topic-list { column-count: 1; } }
+        .sponsor-box img {
+            max-height: 42px;
+            max-width: 110px;
+            object-fit: contain;
+            background: #ffffff;
+            padding: 4px;
+        }
+
+        .important-dates-table {
+            width: 100%;
+        }
+
+        .important-dates-table td {
+            padding: 8px 0;
+            border-bottom: 1px dashed var(--border);
+        }
+
+        .date-label {
+            color: #64748b;
+        }
+
+        .date-value {
+            font-weight: 600;
+            text-align: right;
+            color: var(--primary);
+        }
+
+        .footer {
+            background: #0f172a;
+            color: #94a3b8;
+            padding: 30px 0;
+            font-size: 0.9rem;
+        }
+
+        .logo-box {
+            max-height: 40px;
+            margin-right: 15px;
+        }
+
+        .hero-logo-sm {
+            max-height: 60px;
+        }
+
+        @media (max-width: 768px) {
+            .topic-list {
+                column-count: 1;
+            }
+        }
     </style>
 </head>
+
 <body data-bs-spy="scroll" data-bs-target="#nav">
 
     <header class="main-header">
@@ -153,7 +230,7 @@
     </header>
 
     <main class="container">
-        
+
         <!-- Top Info Row -->
         <section id="meta" class="py-4">
             <div class="row g-3">
@@ -177,8 +254,19 @@
             <div class="row g-4">
                 <div class="col-lg-8">
                     <h2>Workshop Overview</h2>
-                    <p>Mobile health (mHealth) technologies-smartphone apps, wearables, implantables, home monitoring devices, and connected clinical systems-are transforming how healthcare is delivered, monitored, and managed. Yet, these same technologies introduce critical attack surfaces and privacy risks across the data lifecycle, from on-device sensing and communication to cloud analytics and electronic health record (EHR) integration. Securing mHealth systems is therefore essential to maintaining patient trust, safety, and regulatory compliance while enabling innovation in connected health.</p>
-                    <p class="mb-0">The mHealth Security Workshop at IEEE/ACM CHASE 2026 provides a focused forum for researchers, practitioners, clinicians, and policymakers to discuss emerging threats, novel defenses, real-world deployments, and open challenges in securing mobile and connected health ecosystems. The workshop seeks contributions that span theory, system design, implementation, user studies, and policy, with an emphasis on deployable solutions and interdisciplinary collaboration.</p>
+                    <p>Mobile health (mHealth) technologies-smartphone apps, wearables, implantables, home monitoring
+                        devices, and connected clinical systems-are transforming how healthcare is delivered, monitored,
+                        and managed. Yet, these same technologies introduce critical attack surfaces and privacy risks
+                        across the data lifecycle, from on-device sensing and communication to cloud analytics and
+                        electronic health record (EHR) integration. Securing mHealth systems is therefore essential to
+                        maintaining patient trust, safety, and regulatory compliance while enabling innovation in
+                        connected health.</p>
+                    <p class="mb-0">The mHealth Security Workshop at IEEE/ACM CHASE 2026 provides a focused forum for
+                        researchers, practitioners, clinicians, and policymakers to discuss emerging threats, novel
+                        defenses, real-world deployments, and open challenges in securing mobile and connected health
+                        ecosystems. The workshop seeks contributions that span theory, system design, implementation,
+                        user studies, and policy, with an emphasis on deployable solutions and interdisciplinary
+                        collaboration.</p>
                 </div>
                 <div class="col-lg-4">
                     <div class="info-card">
@@ -193,6 +281,17 @@
                             <div class="small text-muted">Workshop TPC Chair</div>
                             <div class="small text-muted">Yeshiva University, USA</div>
                         </div>
+
+                        <div>
+                            <div class="small fw-bold">Henry Ngo</div>
+                            <div class="small text-muted">Workshop Demo/Poster Chair</div>
+                            <div class="small text-muted">Yeshiva University, USA</div>
+                        </div>
+                        <div>
+                            <div class="small fw-bold">Ashikur Nobel</div>
+                            <div class="small text-muted">Workshop Web Chair</div>
+                            <div class="small text-muted">Yeshiva University, USA</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -203,20 +302,32 @@
             <h2>Topics of Interest</h2>
             <p class="small text-muted mb-4">Topics of interest include, but are not limited to:</p>
             <ul class="topic-list">
-                <li>Threat models, vulnerabilities, and risk assessment for mHealth apps, wearables, and remote monitoring systems</li>
-                <li>Secure architectures for end-to-end mHealth data collection, transmission, storage, and analytics</li>
-                <li>Lightweight cryptography, secure communication, and key management for resource-constrained devices</li>
-                <li>Privacy-preserving data collection and sharing (e.g., anonymization, federated learning, differential privacy)</li>
-                <li>Security and privacy of AI/ML models in mHealth (adversarial attacks, model stealing, robustness, secure training)</li>
-                <li>Secure mobile sensing and behavior/physiological monitoring, including multimodal and wireless sensing</li>
-                <li>Authentication, authorization, access control, and identity management for patients, clinicians, and devices</li>
+                <li>Threat models, vulnerabilities, and risk assessment for mHealth apps, wearables, and remote
+                    monitoring systems</li>
+                <li>Secure architectures for end-to-end mHealth data collection, transmission, storage, and analytics
+                </li>
+                <li>Lightweight cryptography, secure communication, and key management for resource-constrained devices
+                </li>
+                <li>Privacy-preserving data collection and sharing (e.g., anonymization, federated learning,
+                    differential privacy)</li>
+                <li>Security and privacy of AI/ML models in mHealth (adversarial attacks, model stealing, robustness,
+                    secure training)</li>
+                <li>Secure mobile sensing and behavior/physiological monitoring, including multimodal and wireless
+                    sensing</li>
+                <li>Authentication, authorization, access control, and identity management for patients, clinicians, and
+                    devices</li>
                 <li>Integration security between mHealth platforms, cloud services, IoT devices, and EHR systems</li>
-                <li>Usable security and human factors in mHealth (patient and clinician facing interfaces, consent, transparency)</li>
-                <li>Policy, regulation, compliance, and ethical considerations (e.g., HIPAA, GDPR, international frameworks)</li>
+                <li>Usable security and human factors in mHealth (patient and clinician facing interfaces, consent,
+                    transparency)</li>
+                <li>Policy, regulation, compliance, and ethical considerations (e.g., HIPAA, GDPR, international
+                    frameworks)</li>
                 <li>Security and privacy in telehealth, remote patient monitoring, and home-based care platforms</li>
-                <li>Attack detection, anomaly detection, runtime monitoring, and incident response for mHealth infrastructures</li>
-                <li>Testbeds, benchmark datasets, tools, and reproducibility frameworks for mHealth security research</li>
-                <li>Case studies, pilots, and large-scale deployments of secure mHealth solutions in clinical or community settings</li>
+                <li>Attack detection, anomaly detection, runtime monitoring, and incident response for mHealth
+                    infrastructures</li>
+                <li>Testbeds, benchmark datasets, tools, and reproducibility frameworks for mHealth security research
+                </li>
+                <li>Case studies, pilots, and large-scale deployments of secure mHealth solutions in clinical or
+                    community settings</li>
                 <li>Security for mHealth in low-resource environments and global health contexts</li>
             </ul>
         </section>
@@ -228,29 +339,38 @@
                 <div class="col-md-6">
                     <div class="info-card bg-white">
                         <h6 class="fw-bold">Full Papers (Research/Experience)</h6>
-                        <p class="small text-muted mb-0">Up to 6 pages (including references), describing original research, system design and evaluation, or significant deployment experiences and case studies.</p>
+                        <p class="small text-muted mb-0">Up to 6 pages (including references), describing original
+                            research, system design and evaluation, or significant deployment experiences and case
+                            studies.</p>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="info-card bg-white">
                         <h6 class="fw-bold">Demo and Poster Abstracts</h6>
-                        <p class="small text-muted mb-0">2-3 pages, describing tools, prototypes, datasets, or interactive systems relevant to mHealth security that can be showcased during the workshop.</p>
+                        <p class="small text-muted mb-0">2-3 pages, describing tools, prototypes, datasets, or
+                            interactive systems relevant to mHealth security that can be showcased during the workshop.
+                        </p>
                     </div>
                 </div>
             </div>
             <div class="row g-4">
                 <div class="col-12">
                     <ul class="small ps-3 mb-4">
-                        <li class="mb-1">All submissions must be in English and follow the main CHASE 2026 formatting guidelines (ACM conference proceedings format, double-column).</li>
-                        <li class="mb-1">Submissions must be original, not published or under review elsewhere.</li>
-                        <li class="mb-1">Papers should be submitted in PDF format via the CHASE 2026 workshop submission site.</li>
-                        <li>At least one author of each accepted paper must register for CHASE 2026 and present the work in person.</li>
+                        <li class="mb-1">All submissions must be in English and follow the main CHASE 2026 formatting
+                            guidelines (IEEE conference proceedings format, double-column).</li>
+                        <li class="mb-1">Submitted papers must be neither previously published nor under review by
+                            another workshop, conference or journal.</li>
+                        <li class="mb-1"> Please use the <a href="#">workshop submission</a> to submit your papers.</li>
+                        <li>At least one author of each accepted paper must register for CHASE 2026 and present the work
+                            in person.</li>
                     </ul>
                 </div>
                 <div class="col-12">
                     <div class="p-3 border rounded small bg-light">
                         <strong class="d-block mb-1 text-primary">Proceedings & Publication</strong>
-                        Accepted papers will be included in the official CHASE 2026 workshop proceedings or companion volume, subject to the conference's publication policies. Details (indexing, publisher, camera-ready instructions) will follow the CHASE 2026 guidelines for workshops.
+                        Accepted papers will be included in the official CHASE 2026 workshop proceedings or companion
+                        volume, subject to the conference's publication policies. Details (indexing, publisher,
+                        camera-ready instructions) will follow the CHASE 2026 guidelines for workshops.
                     </div>
                 </div>
             </div>
@@ -262,19 +382,34 @@
                 <div class="col-md-6">
                     <h2>Important Dates</h2>
                     <table class="important-dates-table">
-                        <tr><td class="date-label">Paper submission deadline</td><td class="date-value">TBA <small class="fw-normal text-muted">(March-April 2026)</small></td></tr>
-                        <tr><td class="date-label">Notification of acceptance</td><td class="date-value">TBA <small class="fw-normal text-muted">(May 2026)</small></td></tr>
-                        <tr><td class="date-label">Camera-ready deadline</td><td class="date-value">TBA <small class="fw-normal text-muted">(June 2026)</small></td></tr>
-                        <tr><td class="date-label fw-bold text-dark">Workshop date</td><td class="date-value text-primary">August 4-6, 2026</td></tr>
+                        <tr>
+                            <td class="date-label">Paper submission deadline</td>
+                            <td class="date-value">March 16, 2026</td>
+                        </tr>
+                        <tr>
+                            <td class="date-label">Notification of acceptance</td>
+                            <td class="date-value">April 7, 2026</td>
+                        </tr>
+                        <tr>
+                            <td class="date-label">Camera-ready deadline</td>
+                            <td class="date-value">April 20, 2026</td>
+                        </tr>
+                        <tr>
+                            <td class="date-label fw-bold text-dark">Workshop date</td>
+                            <td class="date-value text-primary">August 6, 2026 <small
+                                    class="fw-normal text-muted">(tentative)</small></td>
+                        </tr>
                     </table>
                 </div>
                 <div class="col-md-6">
                     <h2>Target Audience</h2>
                     <ul class="small ps-3 mb-0">
-                        <li>Researchers and students in cybersecurity, ubiquitous computing, AI/ML, and health informatics.</li>
+                        <li>Researchers and students in cybersecurity, ubiquitous computing, AI/ML, and health
+                            informatics.</li>
                         <li>Healthcare IT professionals, clinicians, and hospital security leaders.</li>
                         <li>Developers and engineers from industry (mHealth, devices, cloud, telecom).</li>
-                        <li>Policymakers, regulators, and representatives from standards bodies interested in secure and privacy-preserving connected health.</li>
+                        <li>Policymakers, regulators, and representatives from standards bodies interested in secure and
+                            privacy-preserving connected health.</li>
                     </ul>
                 </div>
             </div>
@@ -298,11 +433,44 @@
                         <div class="fw-bold">Prof. Yucheng Xie</div>
                         <div class="small text-muted">Workshop TPC Chair</div>
                         <div class="small mb-2">Yeshiva University, USA</div>
-                        <div class="small"><i class="bi bi-envelope-fill me-2 text-primary"></i><a href="mailto:Yucheng.xie@yu.edu" class="text-decoration-none fw-bold text-primary">Yucheng.xie@yu.edu</a></div>
+                        <div class="small"><i class="bi bi-envelope-fill me-2 text-primary"></i><a
+                                href="mailto:Yucheng.xie@yu.edu"
+                                class="text-decoration-none fw-bold text-primary">Yucheng.xie@yu.edu</a></div>
                     </div>
                 </div>
             </div>
-            <p class="mt-4 small text-muted">For general information about IEEE/ACM CHASE 2026, visit the <a href="https://conferences.computer.org/chase2026/" target="_blank" class="text-primary fw-bold">official website</a>.</p>
+            <p class="mt-4 small text-muted">For general information about IEEE/ACM CHASE 2026, visit the <a
+                    href="https://conferences.computer.org/chase2026/" target="_blank"
+                    class="text-primary fw-bold">official website</a>.</p>
+            <p class="small text-muted">Acknowledgment: The workshop is partly supported by NSF grant #2428595 (PI
+                Wang).</p>
+
+            <div class="mt-5 mb-5">
+                <h2>Workshop Flyer</h2>
+                <div class="row justify-content-center">
+                    <div class="col-md-10 col-lg-8">
+                        <div class="border rounded shadow-sm bg-white p-2">
+                            <iframe src="flyer.pdf" width="100%" height="600px" style="border: none;"></iframe>
+                        </div>
+                        <div class="text-center mt-3">
+                            <a href="flyer.pdf" class="btn btn-navy" target="_blank">
+                                <i class="bi bi-file-earmark-pdf me-2"></i>Open Flyer in New Tab
+                            </a>
+                            <a href="flyer.pdf" class="btn btn-navy ms-2" download>
+                                <i class="bi bi-download me-2"></i>Download PDF
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sponsors">
+                <div class="sponsor-box"><img src="logos/acm_1s_flat_pos.png"></div>
+                <div class="sponsor-box"><img src="logos/ieee-logo.png"></div>
+                <div class="sponsor-box"><img src="logos/ieee_cs-logo.png"></div>
+                <div class="sponsor-box"><img src="logos/nsf-logo.png"></div>
+                <div class="sponsor-box"><img src="logos/elsevier-logo.png"></div>
+            </div>
         </section>
 
     </main>
@@ -310,10 +478,13 @@
     <footer class="footer">
         <div class="container text-center">
             <p class="mb-1 fw-bold text-white">mHealth Security Workshop 2026</p>
-            <p class="mb-0 small">IEEE/ACM CHASE &bull; Pittsburgh, PA, USA &bull; <a href="https://conferences.computer.org/chase2026/" class="text-white text-decoration-none opacity-75" target="_blank">Conference Website</a></p>
+            <p class="mb-0 small">IEEE/ACM CHASE &bull; Pittsburgh, PA, USA &bull; <a
+                    href="https://conferences.computer.org/chase2026/"
+                    class="text-white text-decoration-none opacity-75" target="_blank">Conference Website</a></p>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

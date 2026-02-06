@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>mHealth Security Workshop 2026</title>
+
+<style>
+@page {
+  size: A4 portrait;
+  margin: 18mm;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 10.5pt;
+  line-height: 1.4;
+  color: #1e293b;
+  margin: 0;
+}
+
+/* Color palette */
+:root {
+  --navy: #001b36;
+  --primary: #00244b;
+  --accent: #3b82f6;
+  --light: #f1f5f9;
+  --border: #cbd5e1;
+}
+
+/* Headings */
+h1 {
+  font-size: 22pt;
+  margin: 0;
+  color: #ffffff;
+}
+
+h2 {
+  font-size: 11pt;
+  margin: 14px 0 6px;
+  padding-bottom: 3px;
+  border-bottom: 2px solid var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  color: var(--primary);
+}
+
+h3 {
+  font-size: 10.5pt;
+  margin: 8px 0 4px;
+  color: var(--primary);
+}
+
+p { margin: 4px 0 6px; }
+
+ul {
+  margin: 4px 0 6px 18px;
+  padding: 0;
+}
+
+li { margin-bottom: 3px; }
+
+/* Dark Header */
+.header {
+  background: var(--navy);
+  padding: 14px 16px;
+  margin-bottom: 12px;
+}
+
+.header .conf {
+  font-size: 10pt;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: #c7d2fe;
+}
+
+.header .meta {
+  font-size: 10pt;
+  margin-top: 4px;
+  color: #e5e7eb;
+}
+
+/* Fixed grid layout */
+.grid-fixed {
+  display: grid;
+  grid-template-columns: 58% 40%;
+  gap: 14px;
+}
+
+.box {
+  background: var(--light);
+  border: 1px solid var(--border);
+  padding: 8px;
+}
+
+.highlight {
+  background: #e0ebff;
+  border-left: 4px solid var(--accent);
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+/* Dates */
+.dates table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 10pt;
+}
+
+.dates td {
+  padding: 4px 0;
+}
+
+.dates td:last-child {
+  text-align: right;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+/* Full-width section */
+.full-width {
+  margin-top: 6px;
+}
+
+/* Dark footer block */
+.footer-dark {
+  background: var(--navy);
+  color: #e5e7eb;
+  margin-top: 10px;
+  padding: 10px 12px;
+  font-size: 9.5pt;
+}
+
+.footer-dark strong {
+  color: #ffffff;
+}
+
+/* Sponsors */
+.sponsors {
+  margin-top: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+}
+
+.sponsor-box img {
+  max-height: 42px;
+  max-width: 110px;
+  object-fit: contain;
+  background: #ffffff;
+  padding: 4px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+  <div class="conf">IEEE/ACM CHASE 2026 Workshop</div>
+  <h1>mHealth Security Workshop 2026</h1>
+  <div class="meta">
+    Pittsburgh, Pennsylvania, USA &nbsp; | &nbsp;
+    August 6, 2026 (tentative)
+  </div>
+</div>
+
+<h2>Workshop Overview</h2>
+<!-- <p style="text-align: justify;">
+Mobile health (mHealth) technologies-including smartphone applications, wearables,
+implantable devices, home monitoring systems, and connected clinical platforms-are
+transforming healthcare delivery while introducing critical security and privacy challenges
+across sensing, communication, cloud analytics, and EHR integration.
+</p> -->
+<p style="text-align: justify;">
+The <strong>mHealth Security Workshop</strong> at IEEE/ACM CHASE 2026 provides a focused forum
+for researchers, practitioners, clinicians, and policymakers to discuss emerging threats,
+novel defenses, real-world deployments, and open challenges in securing mobile and
+connected health ecosystems. For more information: <a href="https://mhealthsecurity-at-chase.github.io/">https://mhealthsecurity-at-chase.github.io/</a>
+</p>
+
+<div class="grid-fixed">
+
+  <!-- LEFT: TOPICS -->
+  <div>
+    <h2>Topics of Interest</h2>
+    <p><em>Topics of interest include, but are not limited to:</em></p>
+    <ul style="text-align: justify;">
+      <li>Threat models, vulnerabilities, and risk assessment for mHealth apps, wearables, and remote monitoring systems</li>
+      <!-- <li>Secure architectures for end-to-end mHealth data collection, transmission, storage, and analytics</li> -->
+      <li>Lightweight cryptography, secure communication, and key management for resource-constrained devices</li>
+      <li>Privacy-preserving data collection and sharing</li>
+      <li>Security and privacy of AI/ML models in mHealth (adversarial attacks, model stealing, robustness, secure training)</li>
+      <li>Secure mobile sensing and behavior/physiological monitoring, including multimodal and wireless sensing</li>
+      <li>Authentication, authorization, access control, and identity management for patients, clinicians, and devices</li>
+      <li>Integration security between mHealth platforms, cloud services, IoT devices, and EHR systems</li>
+      <!-- <li>Usable security and human factors in mHealth (consent, transparency, interfaces)</li> -->
+      <li>Policy, regulation, compliance, and ethical considerations (HIPAA, GDPR, international frameworks)</li>
+      <li>Security and privacy in telehealth, remote patient monitoring, and home-based care platforms</li>
+      <li>Attack detection, anomaly detection, runtime monitoring, and incident response</li>
+      <!-- <li>Testbeds, benchmark datasets, tools, and reproducibility frameworks</li> -->
+      <!-- <li>Case studies, pilots, and large-scale deployments in clinical or community settings</li>
+      <li>Security for mHealth in low-resource environments and global health contexts</li> -->
+    </ul>
+  </div>
+
+  <!-- RIGHT: DATES + ORGANIZERS -->
+  <div>
+    <h2>Important Dates</h2>
+    <div class="box dates">
+      <table>
+        <tr><td>Paper submission deadline</td><td>March 16, 2026</td></tr>
+        <tr><td>Notification of acceptance</td><td>April 7, 2026</td></tr>
+        <tr><td>Camera-ready deadline</td><td>April 20, 2026</td></tr>
+        <!-- <tr><td>Workshop date</td><td>August 6, 2026</td></tr> -->
+      </table>
+    </div>
+
+    <h2>Organizers</h2>
+    <div class="highlight">
+      <p>
+        <strong>Prof. Honggang Wang</strong><br>
+        Workshop General Chair (CHASE 2026)<br>
+        Yeshiva University, USA
+      </p>
+      <p>
+        <strong>Prof. Yucheng Xie</strong><br>
+        Workshop TPC Chair<br>
+        Yeshiva University, USA
+      </p>
+
+      <p><strong>Henry Ngo</strong><br>
+        Workshop Demo/Poster Chair<br>
+        Yeshiva University, USA
+      </p>
+      <p>
+          <strong>Ashikur Nobel</strong><br>
+          Workshop Web Chair<br>
+          Yeshiva University, USA
+      </p>
+    </div>
+  </div>
+
+</div>
+
+<div class="full-width">
+  <h2>Submission Guidelines</h2>
+
+  <h3>Full Papers (Research/Experience)</h3>
+  <p>
+    Up to 6 pages (including references), describing original research, system design and
+    evaluation, or significant deployment experiences and case studies.
+  </p>
+
+  <h3>Demo and Poster Abstracts</h3>
+  <p>
+    2-3 pages, describing tools, prototypes, datasets, or interactive systems relevant to
+    mHealth security that can be showcased during the workshop.
+  </p>
+  <p style="text-align: justify;">
+  All submissions must be in English and follow the main CHASE 2026 formatting guidelines (IEEE double-column format).
+  Submitted papers must be neither previously published nor under review elsewhere.  
+  At least one author of each accepted paper must register for CHASE 2026 and present in person.
+  Accepted papers will be included in the official CHASE 2026 workshop proceedings or
+    companion volume, subject to conference publication policies.</p>
+  
+</div>
+
+<div class="footer-dark">
+  <strong>Contact:</strong> Yucheng.xie@yu.edu<br>
+  <strong>Conference Website:</strong> https://conferences.computer.org/chase2026/<br>
+  <strong>Acknowledgment:</strong> The workshop is partly supported by NSF grant #2428595 (PI Wang).
+
+ 
+</div>
+ <div class="sponsors">
+    <div class="sponsor-box"><img src="logos/acm_1s_flat_pos.png"></div>
+    <div class="sponsor-box"><img src="logos/ieee-logo.png"></div>
+    <div class="sponsor-box"><img src="logos/ieee_cs-logo.png"></div>
+    <div class="sponsor-box"><img src="logos/nsf-logo.png"></div>
+    <div class="sponsor-box"><img src="logos/elsevier-logo.png"></div>
+  </div>
+</body>
+</html>
