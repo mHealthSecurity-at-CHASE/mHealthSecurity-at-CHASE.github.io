@@ -128,9 +128,9 @@ Accepted papers will be included in the official CHASE 2026 workshop proceedings
 ## Important Dates
 
 
-- **Paper submission deadline:** March 16, 2026
-- **Notification of acceptance:** April 7, 2026
-- **Camera-ready deadline:** April 20, 2026
+- **Paper submission deadline:**  April 19, 2026
+- **Notification of acceptance:**  May 21, 2026
+- **Camera-ready deadline:**  May 31, 2026
 - **Workshop date:** August 6, 2026 (tentative)
 
 
