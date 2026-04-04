@@ -69,7 +69,7 @@
 
         section {
             padding: 40px 0;
-            border-bottom: 1px solid var(--border);
+/*             border-bottom: 1px solid var(--border); */
         }
 
         h2 {
@@ -105,8 +105,6 @@
         }
 
         .topic-list {
-            column-count: 2;
-            column-gap: 40px;
             list-style: none;
             padding: 0;
         }
@@ -178,10 +176,13 @@
             max-height: 60px;
         }
 
-        @media (max-width: 768px) {
-            .topic-list {
-                column-count: 1;
-            }
+        .name-link {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        .name-link:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -252,7 +253,7 @@
         <!-- Overview -->
         <section id="overview">
             <div class="row g-4">
-                <div class="col-lg-8">
+                <div class="col-12">
                     <h2>Workshop Overview</h2>
                     <p>Mobile health (mHealth) technologies-smartphone apps, wearables, implantables, home monitoring
                         devices, and connected clinical systems-are transforming how healthcare is delivered, monitored,
@@ -268,256 +269,7 @@
                         user studies, and policy, with an emphasis on deployable solutions and interdisciplinary
                         collaboration.</p>
                 </div>
-                <div class="col-lg-4">
-                    <div class="info-card">
-                        <h6 class="fw-bold text-uppercase small mb-3">Organizing Committee</h6>
-                        <div class="mb-3">
-                            <div class="small fw-bold">Prof. Honggang Wang</div>
-                            <div class="small text-muted">Workshop General Chair (CHASE 2026)</div>
-                            <div class="small text-muted">Yeshiva University, USA</div>
-                        </div>
-                        <div class="mb-3">
-                            <div class="small fw-bold">Prof. Yucheng Xie</div>
-                            <div class="small text-muted">Workshop TPC Chair</div>
-                            <div class="small text-muted">Yeshiva University, USA</div>
-                        </div>
-
-                        <div class="mb-3">
-                            <div class="small fw-bold">Henry Ngo</div>
-                            <div class="small text-muted">Workshop Demo/Poster Chair</div>
-                            <div class="small text-muted">Yeshiva University, USA</div>
-                        </div>
-                        <div class="mb-3">
-                            <div class="small fw-bold">Ashikur Nobel</div>
-                            <div class="small text-muted">Workshop Web Chair</div>
-                            <div class="small text-muted">Yeshiva University, USA</div>
-                        </div>
-                    </div>
-                </div>
             </div>
-        </section>
-
-
-
-        <style>
-            .name-link {
-                color: navy;
-                text-decoration: none;
-            }
-
-            .name-link:hover {
-                text-decoration: underline;
-            }
-        </style>
-
-
-        <section id="tpc">
-            <h2>Technical Program Committee</h2>
-
-            <div class="row">
-                <!-- Column 1 -->
-                <div class="col-lg-6">
-                    <div class="info-card">
-                        <!-- <h6 class="fw-bold text-uppercase small mb-3">Organizing Committee</h6> -->
-
-                        <div class="mb-3">
-                            <div class="small fw-bold">
-                                <a href="mailto:xxue@hawaii.edu" class="name-link">Xiaochan Xue</a>
-                            </div>
-
-                            <div class="small text-muted">University of Hawai'i at Mānoa, USA</div>
-                        </div>
-
-                        <div class="mb-3">
-                            <div class="small fw-bold">
-                                <a href="mailto:samit1@umbc.edu" class="name-link">Samit Shivadekar</a>
-                            </div>
-
-                            <div class="small text-muted">UMBC, USA</div>
-                        </div>
-
-                        <div class="mb-3">
-                            <div class="small fw-bold">
-                                <a href="mailto:hongmei.chi@famu.edu" class="name-link">Hongmei Chi</a>
-                            </div>
-
-                            <div class="small text-muted">Florida A&amp;M University, USA</div>
-                        </div>
-
-                        <div class="mb-3">
-                            <div class="small fw-bold">
-                                <a href="mailto:mingzhe.chen@miami.edu" class="name-link">Mingzhe Chen</a>
-                            </div>
-
-                            <div class="small text-muted">University of Miami, USA</div>
-                        </div>
-
-                        <div class="mb-3">
-                            <div class="small fw-bold">
-                                <a href="mailto:nghose@unl.edu" class="name-link">Nirnimesh Ghose</a>
-                            </div>
-
-                            <div class="small text-muted">University of Nebraska - Lincoln, USA</div>
-                        </div>
-
-                        <div class="mb-3">
-                            <div class="small fw-bold">
-                                <a href="mailto:peizhong.ju@uky.edu" class="name-link">Peizhong Ju</a>
-                            </div>
-
-                            <div class="small text-muted">University of Kentucky</div>
-                        </div>
-
-                        <div class="mb-3">
-                            <div class="small fw-bold">
-                                <a href="mailto:beiyulin@gmail.com" class="name-link">Beiyu Lin</a>
-                            </div>
-
-                            <div class="small text-muted">The University of Texas Rio Grande Valley, USA</div>
-                        </div>
-
-                        <div class="mb-3">
-                            <div class="small fw-bold">
-                                <a href="mailto:dm878@cam.ac.uk" class="name-link">Dong Ma</a>
-                            </div>
-
-                            <div class="small text-muted">Singapore Management University</div>
-                        </div>
-
-                        <div class="mb-3">
-                            <div class="small fw-bold">
-                                <a href="mailto:danda.rawat@howard.edu" class="name-link">Danda Rawat</a>
-                            </div>
-
-                            <div class="small text-muted">Howard University</div>
-                        </div>
-
-
-                        <div class="mb-3">
-                            <div class="small fw-bold">
-                                <a href="mailto:yiliren@usf.edu" class="name-link">Yili Ren</a>
-                            </div>
-
-                            <div class="small text-muted">University of South Florida, USA</div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Column 2 -->
-                <div class="col-lg-6">
-                    <div class="info-card">
-                        <!-- <h6 class="fw-bold text-uppercase small mb-3">Program Committee</h6> -->
-                        <div class="mb-3">
-                            <div class="small fw-bold">
-                                <a href="mailto:gsharma2@kent.edu" class="name-link">Gokarna Sharma</a>
-                            </div>
-
-                            <div class="small text-muted">Kent State University, USA</div>
-                        </div>
-
-                        <div class="mb-3">
-                            <div class="small fw-bold">
-                                <a href="mailto:apalanisamysundar@mercy.edu" class="name-link">Agnideven Sundar</a>
-                            </div>
-
-                            <div class="small text-muted">Mercy University</div>
-                        </div>
-
-                        <div class="mb-3">
-                            <div class="small fw-bold">
-                                <a href="mailto:yinxin.wan@umb.edu" class="name-link">Yinxin Wan</a>
-                            </div>
-
-                            <div class="small text-muted">University of Massachusetts Boston, USA</div>
-                        </div>
-
-                        <div class="mb-3">
-                            <div class="small fw-bold">
-                                <a href="mailto:wenqiwei@fordham.edu" class="name-link">Wenqi Wei</a>
-                            </div>
-
-                            <div class="small text-muted">Fordham University, USA</div>
-                        </div>
-
-                        <div class="mb-3">
-                            <div class="small fw-bold">
-                                <a href="mailto:chuxiong.wu@siu.edu" class="name-link">Chuxiong Wu</a>
-                            </div>
-
-                            <div class="small text-muted">Southern Illinois University, USA</div>
-                        </div>
-
-                        <div class="mb-3">
-                            <div class="small fw-bold">
-                                <a href="mailto:jwu115@depaul.edu" class="name-link">Jindi Wu</a>
-                            </div>
-
-                            <div class="small text-muted">DePaul University, USA</div>
-                        </div>
-
-                        <div class="mb-3">
-                            <div class="small fw-bold">
-                                <a href="mailto:lxing2@illinois.edu" class="name-link">Luyi Xing</a>
-                            </div>
-
-                            <div class="small text-muted">University of Illinois Urbana-Champaign</div>
-                        </div>
-
-                        <div class="mb-3">
-                            <div class="small fw-bold">
-                                <a href="mailto:zhengkun.ye@uncp.edu" class="name-link">Zhengkun Ye</a>
-                            </div>
-
-                            <div class="small text-muted">University of North Carolina at Pembroke, USA</div>
-                        </div>
-
-                        <div class="mb-3">
-                            <div class="small fw-bold">
-                                <a href="mailto:tzhao1@udayton.edu" class="name-link">Tianming Zhao</a>
-                            </div>
-
-                            <div class="small text-muted">University of Dayton, USA</div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            
-        </section>
-
-        <!-- Topics -->
-        <section id="topics">
-            <h2>Topics of Interest</h2>
-            <p class="small text-muted mb-4">Topics of interest include, but are not limited to:</p>
-            <ul class="topic-list">
-                <li>Threat models, vulnerabilities, and risk assessment for mHealth apps, wearables, and remote
-                    monitoring systems</li>
-                <li>Secure architectures for end-to-end mHealth data collection, transmission, storage, and analytics
-                </li>
-                <li>Lightweight cryptography, secure communication, and key management for resource-constrained devices
-                </li>
-                <li>Privacy-preserving data collection and sharing (e.g., anonymization, federated learning,
-                    differential privacy)</li>
-                <li>Security and privacy of AI/ML models in mHealth (adversarial attacks, model stealing, robustness,
-                    secure training)</li>
-                <li>Secure mobile sensing and behavior/physiological monitoring, including multimodal and wireless
-                    sensing</li>
-                <li>Authentication, authorization, access control, and identity management for patients, clinicians, and
-                    devices</li>
-                <li>Integration security between mHealth platforms, cloud services, IoT devices, and EHR systems</li>
-                <li>Usable security and human factors in mHealth (patient and clinician facing interfaces, consent,
-                    transparency)</li>
-                <li>Policy, regulation, compliance, and ethical considerations (e.g., HIPAA, GDPR, international
-                    frameworks)</li>
-                <li>Security and privacy in telehealth, remote patient monitoring, and home-based care platforms</li>
-                <li>Attack detection, anomaly detection, runtime monitoring, and incident response for mHealth
-                    infrastructures</li>
-                <li>Testbeds, benchmark datasets, tools, and reproducibility frameworks for mHealth security research
-                </li>
-                <li>Case studies, pilots, and large-scale deployments of secure mHealth solutions in clinical or
-                    community settings</li>
-                <li>Security for mHealth in low-resource environments and global health contexts</li>
-            </ul>
         </section>
 
 
@@ -560,7 +312,52 @@
             </div>
         </section>
 
-        
+
+        <!-- Topics -->
+        <section id="topics">
+            <h2>Topics of Interest</h2>
+            <p class="small text-muted mb-4">Topics of interest include, but are not limited to:</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <ul class="topic-list">
+                        <li>Threat models, vulnerabilities, and risk assessment for mHealth apps, wearables, and remote
+                            monitoring systems</li>
+                        <li>Secure architectures for end-to-end mHealth data collection, transmission, storage, and analytics
+                        </li>
+                        <li>Lightweight cryptography, secure communication, and key management for resource-constrained devices
+                        </li>
+                        <li>Privacy-preserving data collection and sharing (e.g., anonymization, federated learning,
+                            differential privacy)</li>
+                        <li>Security and privacy of AI/ML models in mHealth (adversarial attacks, model stealing, robustness,
+                            secure training)</li>
+                        <li>Secure mobile sensing and behavior/physiological monitoring, including multimodal and wireless
+                            sensing</li>
+                        <li>Authentication, authorization, access control, and identity management for patients, clinicians, and
+                            devices</li>
+                        <li>Integration security between mHealth platforms, cloud services, IoT devices, and EHR systems</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul class="topic-list">
+                        <li>Usable security and human factors in mHealth (patient and clinician facing interfaces, consent,
+                            transparency)</li>
+                        <li>Policy, regulation, compliance, and ethical considerations (e.g., HIPAA, GDPR, international
+                            frameworks)</li>
+                        <li>Security and privacy in telehealth, remote patient monitoring, and home-based care platforms</li>
+                        <li>Attack detection, anomaly detection, runtime monitoring, and incident response for mHealth
+                            infrastructures</li>
+                        <li>Testbeds, benchmark datasets, tools, and reproducibility frameworks for mHealth security research
+                        </li>
+                        <li>Case studies, pilots, and large-scale deployments of secure mHealth solutions in clinical or
+                            community settings</li>
+                        <li>Security for mHealth in low-resource environments and global health contexts</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+
 
         <!-- Submissions -->
         <section id="submission">
@@ -638,6 +435,160 @@
                     class="text-primary fw-bold">official website</a>.</p>
             <p class="small text-muted">Acknowledgment: The workshop is partly supported by NSF grant #2428595 (PI
                 Wang).</p>
+
+            <div class="mt-5">
+                <h2>Organizing Committee</h2>
+                <div class="row g-4">
+                    <div class="col-md-3">
+                        <div class="small fw-bold">Prof. Honggang Wang</div>
+                        <div class="small text-muted">Workshop General Chair (CHASE 2026)</div>
+                        <div class="small text-muted">Yeshiva University, USA</div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="small fw-bold">Prof. Yucheng Xie</div>
+                        <div class="small text-muted">Workshop TPC Chair</div>
+                        <div class="small text-muted">Yeshiva University, USA</div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="small fw-bold">Henry Ngo</div>
+                        <div class="small text-muted">Workshop Demo/Poster Chair</div>
+                        <div class="small text-muted">Yeshiva University, USA</div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="small fw-bold">Ashikur Nobel</div>
+                        <div class="small text-muted">Workshop Web Chair</div>
+                        <div class="small text-muted">Yeshiva University, USA</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-5" id="tpc">
+                <h2>Technical Program Committee</h2>
+                <div class="row">
+                    <!-- Column 1 -->
+                    <div class="col-lg-6">
+                        <div class="info-card" style="border:none">
+                            <div class="mb-3">
+                                <div class="small fw-bold">
+                                    <a href="mailto:xxue@hawaii.edu" class="name-link">Xiaochan Xue</a>
+                                </div>
+                                <div class="small text-muted">University of Hawai'i at Mānoa, USA</div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="small fw-bold">
+                                    <a href="mailto:samit1@umbc.edu" class="name-link">Samit Shivadekar</a>
+                                </div>
+                                <div class="small text-muted">UMBC, USA</div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="small fw-bold">
+                                    <a href="mailto:hongmei.chi@famu.edu" class="name-link">Hongmei Chi</a>
+                                </div>
+                                <div class="small text-muted">Florida A&amp;M University, USA</div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="small fw-bold">
+                                    <a href="mailto:mingzhe.chen@miami.edu" class="name-link">Mingzhe Chen</a>
+                                </div>
+                                <div class="small text-muted">University of Miami, USA</div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="small fw-bold">
+                                    <a href="mailto:nghose@unl.edu" class="name-link">Nirnimesh Ghose</a>
+                                </div>
+                                <div class="small text-muted">University of Nebraska - Lincoln, USA</div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="small fw-bold">
+                                    <a href="mailto:peizhong.ju@uky.edu" class="name-link">Peizhong Ju</a>
+                                </div>
+                                <div class="small text-muted">University of Kentucky</div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="small fw-bold">
+                                    <a href="mailto:beiyulin@gmail.com" class="name-link">Beiyu Lin</a>
+                                </div>
+                                <div class="small text-muted">The University of Texas Rio Grande Valley, USA</div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="small fw-bold">
+                                    <a href="mailto:dm878@cam.ac.uk" class="name-link">Dong Ma</a>
+                                </div>
+                                <div class="small text-muted">Singapore Management University</div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="small fw-bold">
+                                    <a href="mailto:danda.rawat@howard.edu" class="name-link">Danda Rawat</a>
+                                </div>
+                                <div class="small text-muted">Howard University</div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="small fw-bold">
+                                    <a href="mailto:yiliren@usf.edu" class="name-link">Yili Ren</a>
+                                </div>
+                                <div class="small text-muted">University of South Florida, USA</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Column 2 -->
+                    <div class="col-lg-6">
+                        <div class="info-card" style="border:none">
+                            <div class="mb-3">
+                                <div class="small fw-bold">
+                                    <a href="mailto:gsharma2@kent.edu" class="name-link">Gokarna Sharma</a>
+                                </div>
+                                <div class="small text-muted">Kent State University, USA</div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="small fw-bold">
+                                    <a href="mailto:apalanisamysundar@mercy.edu" class="name-link">Agnideven Sundar</a>
+                                </div>
+                                <div class="small text-muted">Mercy University</div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="small fw-bold">
+                                    <a href="mailto:yinxin.wan@umb.edu" class="name-link">Yinxin Wan</a>
+                                </div>
+                                <div class="small text-muted">University of Massachusetts Boston, USA</div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="small fw-bold">
+                                    <a href="mailto:wenqiwei@fordham.edu" class="name-link">Wenqi Wei</a>
+                                </div>
+                                <div class="small text-muted">Fordham University, USA</div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="small fw-bold">
+                                    <a href="mailto:chuxiong.wu@siu.edu" class="name-link">Chuxiong Wu</a>
+                                </div>
+                                <div class="small text-muted">Southern Illinois University, USA</div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="small fw-bold">
+                                    <a href="mailto:jwu115@depaul.edu" class="name-link">Jindi Wu</a>
+                                </div>
+                                <div class="small text-muted">DePaul University, USA</div>
+                            </div>
+                            <div class="small fw-bold">
+                                <a href="mailto:lxing2@illinois.edu" class="name-link">Luyi Xing</a>
+                            </div>
+                            <div class="small text-muted">University of Illinois Urbana-Champaign</div>
+                            <div class="mb-3 mt-3">
+                                <div class="small fw-bold">
+                                    <a href="mailto:zhengkun.ye@uncp.edu" class="name-link">Zhengkun Ye</a>
+                                </div>
+                                <div class="small text-muted">University of North Carolina at Pembroke, USA</div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="small fw-bold">
+                                    <a href="mailto:tzhao1@udayton.edu" class="name-link">Tianming Zhao</a>
+                                </div>
+                                <div class="small text-muted">University of Dayton, USA</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <div class="mt-5 mb-5">
                 <h2>Workshop Flyer</h2>
